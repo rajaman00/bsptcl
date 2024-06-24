@@ -26,7 +26,7 @@ function NavigationBar() {
         <>
 
             <div className='design'>
-                <div className='container'>
+                <div >
                     <div className='updiv'>
                         <div className='parentDepartment'>
                             {/* <p> ऊर्जा विभाग, बिहार सरकार</p>

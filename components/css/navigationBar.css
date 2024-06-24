@@ -1,15 +1,21 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 .design {
     background-color: rgb(117, 178, 247);
-    position: fixed; 
+    /* position: fixed; */
+    /* top: 0; 
     z-index: 1000;
     width: 100%; 
     height: min-content;
+    margin: 0;
+    padding: 0; */
 }
-
 .updiv {
+    margin-left: 0px;
+    padding: 0px;
     display: flex;
     justify-content: space-between;
     font-size: x-small;
