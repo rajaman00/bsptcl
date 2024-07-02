@@ -3,122 +3,153 @@
     margin: 0px;
     padding: 0px;
 }
-.design {
-    background-color: rgb(117, 178, 247);
-    /* position: fixed; */
-    /* top: 0; 
-    z-index: 1000;
-    width: 100%; 
-    height: min-content;
-    margin: 0;
-    padding: 0; */
-}
-.updiv {
-    margin-left: 0px;
-    padding: 0px;
+
+/*-------------- Utility Link Design --------------*/
+.utilityLink {
     display: flex;
-    justify-content: space-between;
-    font-size: x-small;
+    justify-content: flex-end;
+    background: #ededed;
     overflow: hidden;
+    height: 2rem;
+
+    border-bottom: 1px solid #d4d4d4;
 }
-.updiv p {
-    margin: 0px;
-    margin-left: 10px;
-    font-size: x-small;
-}
-.parentDepartment {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.updiv a {
+
+.utilityLink a {
     text-decoration: none;
     padding: 10px;
     font-size: x-small;
     color: rgb(87, 79, 79);
 }
-.dndiv {
-    display: flex;
-    /* height: 100px; */
-    
+
+@media (max-width: 768px) {
+    .utilityLink a {
+        padding: 8px;
+    }
 }
 
-.dndiv h5 {
-    margin: auto;
-    margin-left: 2px;
+/* -----------Parent Div CSS---------- */
+.parent {
+    background-color: white;
+    height: 7rem;
+    position: relative;
+    border-bottom: 4px solid #2f2963;
+    box-sizing: border-box;
 }
 
-.navlogo {
-    width: 70%;
+
+/*---------------------------- Logo and Link Div CSS------------------ */
+.logoAndLink {
     display: flex;
-    padding: 10px;
-}
-.deptName {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-#engDeptName {
-    line-height: 1px;
-}
-#holdingDeptName {
-    line-height: 30px;
-}
-.link {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
+    height: 100%;
+
 }
 
-.utility {
-    display: flex;
-    overflow: hidden;
-    font-size: small;
-    height: 25%;
-    /* margin: auto; */
-    margin-top: 40px;
-    background: #ab5656;
-    border-radius: 15px;
+/* ------------------------------Company Logo Css------------------------ */
+.companyLogo{
+ width: 40%;
+ 
+}
+.logoImage {
+    height: 100%;
+
 }
 
-.utility .nav {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+/* ---------------------Main Link Css and serach Bar-------------- */
+.mainLinkAndSearchBar{
+    width: 60%;
+    position: relative;
 }
 
-.main {
-    position: absolute;
-    font-size: 0.95rem;
-    height: auto;
+
+/* --------Main Link CSS----------- */
+.mainLink {
     width: 100%;
-    justify-content: center;
-    margin-top: 0px;
-    background: #79a3dd;
-    margin-right: 0px;
+    position: absolute;
+    font-size: 1rem;
+    bottom: 0;
     right: 0;
+    background-color: #2f2963;
     z-index: 2;
+    /* padding: 6px; */
+    border-top-left-radius: 15px;
 }
-
 .navLinkcolor {
-    color: rgb(78, 76, 76);
+    color: white !important;
+    font-weight: 700 !important;
+    /* z-index: 100000; */
 }
 
 .navLinkcolor:hover {
-    color: #2578f4;
+    color: #2578f4 !important;
 }
 
-.imgdim {
-    object-fit: scale-down;
-    height: 100px;
-    overflow: hidden;
-    margin-right: 10px;
+.crossEffect{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #2f2963;
+    transform-origin: top left;
+    transform: skewX(-33deg);
+    
+    border-top-left-radius: 15px;
 }
+@media (max-width:1140px){
+           .mainLink{
+            font-size: 0.7rem;
+            padding: 2px;
+           }
+}
+@media (max-width:990px){
+    .logoAndLink{
+        position: static;
+    }
+    .mainLink{
+        width: max-content;
+        height: min-content;
+        top: 0;
+        right: 0;
+        background: #2f2963;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    
+    .crossEffect{
+        display: none;
+    }
+}
+
+/* Searchbar Css */
+.searchBar{
+    padding: 10px 1px 3px 1px;
+    width: 50%;
+    border-bottom: 1px solid #4eb300;
+}
+
+/* Tooltip Design */
+#employeeSubDrop::after{
+    content: '\f0d9';
+    font-family: 'FontAwesome';
+    color: #f37022;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* offcanvas button design */
 .btn {
@@ -142,22 +173,27 @@
     .updiv {
         overflow: hidden;
     }
+
     .dndiv {
         display: flex;
         flex-direction: column;
         padding: 0px;
     }
-    .navlogo{
+
+    .navlogo {
         display: flex;
         justify-content: space-between;
         height: 100px;
     }
+
     .utility {
         width: 100%;
     }
+
     .imgdim {
         height: 80px;
     }
+
     .utility .nav {
         width: 100%;
         gap: 0;
@@ -165,15 +201,17 @@
         height: 25px;
         font-size: x-small;
     }
+
     .dndiv h4 {
         font-size: medium;
     }
+
     .link {
         width: 100%;
         display: block;
         justify-content: center;
     }
-    
+
 }
 
 @media (max-width: 768px) {
@@ -181,31 +219,32 @@
         display: flex;
         flex-direction: column;
     }
+
     .utility {
         border-radius: 10px;
         overflow: hidden;
         height: 30px;
         width: 100%;
     }
+
     .utility .nav {
         gap: 0px;
     }
+
     .link {
         width: 100%;
         display: block;
         justify-content: center;
     }
+
     .navlogo {
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
+
     .imgdim {
         height: 80px;
     }
-    .utilityLink{
-        height: 15px;
-        width: 60%;
-        overflow: hidden;
-    }
+
 }

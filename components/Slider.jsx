@@ -98,25 +98,7 @@ function Slider() {
                 <div className="hover-text">Tehta control room</div>
               </div>
             </Carousel.Item>
-          </Carousel>
-        </div>
 
-
-        {/* image slider 2 */}
-
-        <div className='slider2'>
-          <Carousel data-bs-theme="dark">
-            {/* <Carousel.Item interval={8000}>
-              <video  src={video1} autoPlay loop muted className="d-block w-100 sliderVideo" />
-            </Carousel.Item>
-
-            <Carousel.Item interval={8000}>
-            <video  src={video2} autoPlay loop muted className="d-block w-100 sliderVideo"/>
-            </Carousel.Item>
-
-            <Carousel.Item interval={8000}>
-            <video  src={video3} autoPlay loop muted className="d-block w-100 sliderVideo"/>
-            </Carousel.Item> */}
             <Carousel.Item>
             <div className="image-container">
                 <img
@@ -188,12 +170,38 @@ function Slider() {
                 <div className="hover-text">Switchyard at Simri Bakhtiyarpur</div>
               </div>
             </Carousel.Item>
-
           </Carousel>
         </div>
+
+
+  
+
+        
       </div>
     </>
   );
 }
 
 export default Slider;
+
+
+
+
+
+
+
+
+
+
+
+{/* <Carousel.Item interval={8000}>
+              <video  src={video1} autoPlay loop muted className="d-block w-100 sliderVideo" />
+            </Carousel.Item>
+
+            <Carousel.Item interval={8000}>
+            <video  src={video2} autoPlay loop muted className="d-block w-100 sliderVideo"/>
+            </Carousel.Item>
+
+            <Carousel.Item interval={8000}>
+            <video  src={video3} autoPlay loop muted className="d-block w-100 sliderVideo"/>
+            </Carousel.Item> */}

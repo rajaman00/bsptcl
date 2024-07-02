@@ -2,28 +2,16 @@
   
     width: 100%;
     height: auto;
-    margin-top: 26px;
     display: flex;
   }
   
   .sliderImg {
     max-width: 100%;
-    height: 350px;
+    height: 25rem;
   }
   .slider1{
-    width: 50%;
+    width:  100%;
     overflow: hidden;
-  }
-  .slider2{
-    width: 50%;
-
-  }
-  .sliderVideo{
-    max-width: 100%;
-    height: 350px;
-    margin: 0;
-    padding: 0;
-    /* padding-top: 0px; */
   }
 
   .image-container {

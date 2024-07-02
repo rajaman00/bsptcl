@@ -1,27 +1,22 @@
-import Card from 'react-bootstrap/Card';
-import cmImg from '../public/images/nitishkumar.jpg'
-import './css/test.css'
+import React, { useState } from 'react';
 
-function Test() {
-  
+const Test = () => {
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
-      
-      <>
-       <div className="cmCard">
-          <div >
-            <img src={cmImg} alt="CM Image" className="cmImage"/>
-          </div>
-          <div className='cardText'>
-            <h5 className='text-center'>Chief Minister</h5>
-            <p className='text-center'>Nitish Kumar</p>
-          </div>
-       </div>
-      </>
-      
-  
+    <div
+      className="relative"
+      onMouseOver={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <button className="hover:bg-gray-200">Menu</button>
+      {isHovered && (
+        <div className="absolute top-10 left-0 bg-white border shadow">
+          {/* Your menu items */}
+          <a href="">Hi</a>
+        </div>
+      )}
+    </div>
   );
-}
-
-
+};
 export default Test;

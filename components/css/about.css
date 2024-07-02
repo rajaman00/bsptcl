@@ -46,26 +46,7 @@
 }
 
 .cmCard:hover {
-  transform: scale(1.05); /* Slightly scale up the card */
+  transform: scale(1.05);           /*   Slightly scale up the card*/
   box-shadow: rgba(250, 43, 43, 0.3) 0px 25px 50px, rgba(82, 53, 53, 0.22) 0px 20px 30px;
 }
 
-.imageContainer:hover {
-  background-color: #1d4382;
-  transform: skewX(-15deg);
-}
-
-.cmCard:hover {
-  background-color: #04a559;
-  transform: rotate(15deg);
-}
-
-.aboutText p:hover {
-  position: relative; /* Ensure proper positioning */
-  color: #04a559;
-}
-
-.aboutText p:hover ~ .aboutImage {
-  opacity: 0; /* Smoothly hide the image section */
-  pointer-events: none; /* Ensure the hidden section does not capture mouse events */
-}
