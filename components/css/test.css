@@ -1,7 +1,7 @@
 .test{
   display: flex;
   width: 100%;
-  background-color: #0bafec;
+  /* background-color: #0bafec; */
 }
 
 .scrolling-text-container {
@@ -9,8 +9,8 @@
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
-  background: #864545; /* Change as needed */
-  color: #fff; /* Change as needed */
+  /* background: #864545; Change as needed */
+  /* color: #fff; Change as needed */
   padding: 10px 0; /* Adjust padding as needed */
 }
 
@@ -21,7 +21,7 @@
   padding-left: 100%;
   /* animation: text-scroll 15s linear 1s infinite; Adjust animation duration and timing function */
   /* animation-delay: 0s; */
-  animation: 30s linear 0s infinite normal none running marqueeAnimation-37574610;
+  animation: 50s linear 0s infinite normal none running marqueeAnimation-37574610;
   
 }
 .scrolling-text li{
@@ -42,6 +42,31 @@
 }
 @keyframes marqueeAnimation-37574610{
   100% {
-    margin-left: -2210px;
+    margin-left: -3910px;
 }
+}
+
+.leftCrossEffect{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 7.4rem;
+  background-color: #0bafec;
+  transform-origin: top left;
+  transform: skewX(-33deg);
+  /* border-top-right-radius: 25px; */
+}
+
+.rightCrossEffect{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 4rem;
+  background-color: #2f2963;
+  transform-origin: top left;
+  transform: skewX(-33deg);
+  border-top-left-radius: 15px;
+
 }

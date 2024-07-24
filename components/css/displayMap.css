@@ -1,12 +1,13 @@
+
 .mapBox {
   display: flex;
-  background-color: rgb(159, 235, 234);
+  /* background-color: rgb(159, 235, 234); */
  
 }
 
 .map-container {
-    width: 60%;
-    height: 400px;
+    /* width: 60%;
+    height: 400px; */
     /* background-color: aqua; */
     overflow: hidden;
   }
@@ -47,6 +48,34 @@
     pointer-events: none; /* Prevent text from capturing mouse events */
   }
   
+  .muzZone{
+    fill: #E8b4b8;
+    stroke: black;
+    stroke-width: 1;
+  }
+  .patnaZone{
+    fill: #e7ad7d;
+    stroke: black;
+    stroke-width: 1;
+  }
+  .koshiZone
+  {
+    fill: #b0d2da;
+    stroke: black;
+    stroke-width: 1;
+  }
+  .bhagalpurZone{
+    fill: #f8ea8c;
+    stroke: black;
+    stroke-width: 1;
+  }
+  .gayaZone{
+    fill:#a3ebb1; 
+    stroke: black;
+    stroke-width: 1;
+  }
+
+
   .secondPart {
     width: 40%; 
     padding: 20px;  
@@ -136,5 +165,4 @@
     .list-column li {
       margin: 20px;
     }
-  } 
-  
+  }

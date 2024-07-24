@@ -8,8 +8,10 @@ import Slider from '../components/Slider';
 import Test from '../components/test';
 import About from '../components/about';
 import Map from '../components/DisplayMap'
+import VMV from '../components/VMVsection'
 import Footer from '../components/Footer';
 import StickyMenu from '../components/StickyMenu';
+import AwardsSection from '../components/AwardsSection';
 function App() {
   useEffect(() => {
     AOS.init();
@@ -38,6 +40,14 @@ function App() {
 
         <div className="mapSection">
           <Map/>
+        </div>
+
+        <div className="VMVsection">
+           <VMV/>
+        </div>
+
+        <div className="awardSection">
+          <AwardsSection/>
         </div>
         
       </div>
