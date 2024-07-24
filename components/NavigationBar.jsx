@@ -90,14 +90,14 @@ function NavigationBar() {
                                 <span style={{ marginRight: '8px' }}>
                                     <FaSearch />
                                 </span>
-                                <textarea
+                                <input
                                     name="voiceText"
                                     id="voiceText"
                                     placeholder="Enter Your Text"
                                     style={{ border: '0px', height: '1.4rem', width: '100%' }}
                                     value={text}
                                     onChange={(e) => setText(e.target.value)}
-                                ></textarea>
+                                ></input>
                                 <span onClick={voiceSearch}><FaMicrophone /></span>
                             </div>
                             {/* <div className="companyLink" style={{ margin: "2px", padding: "5px" }}>

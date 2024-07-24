@@ -28,10 +28,17 @@
     width:2.5rem;
     cursor: pointer;
     color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 0.3rem;
+    
 }
 .divmenu1:hover,.divmenu2:hover,.divmenu3:hover, .divmenu4:hover, .divmenu5:hover,.divmenu6:hover,.divmenu7:hover{
     width: 10rem;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
 }
 
 

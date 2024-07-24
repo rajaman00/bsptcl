@@ -5,7 +5,15 @@ import phone from '../public/images/NotificationImages/phone.png'
 
 
 function StickyMenu() {
-    let imgPhone = <img src={phone} alt="" style={{width:'2.5rem',height:'2.5rem'}} />
+    let imgPhone = <img src={phone} alt="" style={{width:'2rem',height:'2rem'}} />
+    let setImgPhone = <div style={{display:'flex',padding:'3px', justifyContent:'space-between',width:'10rem'}}>
+        <div>Phone Directory</div>
+        <div>
+        <img src={phone} alt="" style={{width:'2.5rem',height:'2rem',objectFit:'contain'}} />
+        </div>
+        
+    
+    </div>;
     const [value, setValue] = useState(imgPhone)
     const [value2, setValue2] = useState('APAR')
     const [value3, setValue3] = useState('ESS/MSS')
@@ -16,7 +24,7 @@ function StickyMenu() {
     return (
         <>
             
-            <div className="divmenu1" onMouseOver={()=>{setValue('Phone Directory')}}  onMouseOut={()=>{setValue(imgPhone)}}>
+            <div className="divmenu1" onMouseOver={()=>{setValue(setImgPhone)}}  onMouseOut={()=>{setValue(imgPhone)}}>
                 {value}
             </div>
             

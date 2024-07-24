@@ -21,7 +21,7 @@ function App() {
         <div className="navigationBar">
           <NavigationBar />
         </div>
-        <div className="slider">
+        <div className="sliderSection">
           <Slider />
         </div>
         

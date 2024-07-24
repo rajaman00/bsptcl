@@ -1,15 +1,11 @@
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
+
 
 /*-------------- Utility Link Design --------------*/
 .utilityLink {
     display: flex;
     justify-content: flex-end;
     background: #ededed;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 2rem;
 
     border-bottom: 1px solid #d4d4d4;
@@ -137,7 +133,7 @@
     border-top-left-radius: 15px;
 }
 
-@media (max-width:1140px) {
+@media (max-width:1200px) {
     .mainLink {
         font-size: 0.7rem;
         padding: 2px;
