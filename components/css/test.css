@@ -1,10 +1,47 @@
-.hoverDiv {
-    position: absolute;
-    background-color: #961c1c;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 200px;
-    top: 20px; /* Adjust based on your needs */
-    left: 20px; /* Adjust based on your needs */
-  }
+.test{
+  display: flex;
+  width: 100vw;
+  background-color: #0bafec;
+}
+
+.scrolling-text-container {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #864545; /* Change as needed */
+  color: #fff; /* Change as needed */
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+.scrolling-text {
+  display: flex;
+  padding: 10px;
+  white-space: nowrap;
+  padding-left: 100%;
+  /* animation: text-scroll 15s linear 1s infinite; Adjust animation duration and timing function */
+  /* animation-delay: 0s; */
+  animation: 30s linear 0s infinite normal none running marqueeAnimation-37574610;
   
+}
+.scrolling-text li{
+  padding: 5px;
+}
+
+.scrolling-text-container:hover .scrolling-text {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-text {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+@keyframes marqueeAnimation-37574610{
+  100% {
+    margin-left: -2210px;
+}
+}

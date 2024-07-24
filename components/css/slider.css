@@ -1,49 +1,43 @@
 .slider {
-  
-    width: 100%;
-    height: auto;
-    display: flex;
-  }
-  
-  .sliderImg {
-    max-width: 100%;
-    height: 25rem;
-  }
-  .slider1{
-    width:  100%;
-    overflow: hidden;
-  }
+  height: auto;
+  width: 100vw;
+}
 
-  .image-container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .image-container img {
-    width: 100%;
-    display: block;
-  }
-  
-  .hover-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .image-container:hover .hover-text {
-    opacity: 1;
-  }
-    
-  @media (max-width: 1180px){
-    .sliderImg{
+.sliderImg {
+  width: 100%;
+  height: 25rem;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .hover-text {
+  opacity: 1;
+}
+
+@media (max-width: 1180px) {
+  .sliderImg {
       height: 250px;
-    }
-    
   }
+}

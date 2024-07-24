@@ -26,8 +26,8 @@ function Slider() {
   return (
     <>
       <div className='slider'>
-        {/* image slider 1*/}
-        <div className='slider1'>
+        {/* image slider */}
+        
           <Carousel data-bs-theme="dark" activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
             <div className="image-container">
@@ -171,7 +171,7 @@ function Slider() {
               </div>
             </Carousel.Item>
           </Carousel>
-        </div>
+        
 
 
   

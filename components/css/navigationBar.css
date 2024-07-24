@@ -41,29 +41,69 @@
 /*---------------------------- Logo and Link Div CSS------------------ */
 .logoAndLink {
     display: flex;
-    position: relative;
+    /* position: relative; */
     height: 100%;
 
 }
 
 /* ------------------------------Company Logo Css------------------------ */
-.companyLogo{
- width: 40%;
- 
+.companyLogo {
+    width: 40%;
+
 }
+
+
 .logoImage {
     height: 100%;
 
 }
 
+@media (max-width:991px) {
+    .companyLogo {
+        width: 100%;
+        height: 43%;
+
+    }
+
+    .logoImage {
+        height: 100%;
+    }
+}
+
 /* ---------------------Main Link Css and serach Bar-------------- */
-.mainLinkAndSearchBar{
+.mainLinkAndSearchBar {
     width: 60%;
     position: relative;
 }
 
+@media(max-width:991px) {
+    .mainLinkAndSearchBar {
+        width: 100%;
+        position: static;
+    }
+}
+/* Company Link  and Search Bar*/
+.searchBarAndCompanyLink{
+    display: flex;
+}
+.companyLink{
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: flex-end;
+    padding: 0.5rem;
+    margin-left: 3rem;
+    width: 50%;
+    
+}
+
+
+
 
 /* --------Main Link CSS----------- */
+.nav-link {
+    padding: 0px 10px 0 10px !important;
+}
+
 .mainLink {
     width: 100%;
     position: absolute;
@@ -72,21 +112,19 @@
     right: 0;
     background-color: #2f2963;
     z-index: 2;
-    /* padding: 6px; */
+    padding-bottom: 0 !important;
     border-top-left-radius: 15px;
 }
+
 .navLinkcolor {
     color: white !important;
     font-weight: 700 !important;
     /* z-index: 100000; */
 }
 
-.navLinkcolor:hover {
-    color: #2578f4 !important;
-}
 
-.crossEffect{
-    
+.crossEffect {
+
     width: 100%;
     height: 100%;
     position: absolute;
@@ -95,50 +133,239 @@
     background-color: #2f2963;
     transform-origin: top left;
     transform: skewX(-33deg);
-    
+
     border-top-left-radius: 15px;
 }
-@media (max-width:1140px){
-           .mainLink{
-            font-size: 0.7rem;
-            padding: 2px;
-           }
-}
-@media (max-width:990px){
-    .logoAndLink{
-        position: static;
+
+@media (max-width:1140px) {
+    .mainLink {
+        font-size: 0.7rem;
+        padding: 2px;
     }
-    .mainLink{
+}
+
+@media (max-width:991px) {
+    .logoAndLink {
+        position: static;
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .mainLink {
         width: max-content;
         height: min-content;
+        background-color: white;
+        position: absolute;
         top: 0;
-        right: 0;
-        background: #2f2963;
-        display: flex;
-        justify-content: flex-end;
-        
     }
-    
-    .crossEffect{
+
+    .navLinkcolor{
+        color: black !important;
+    }
+    .crossEffect {
         display: none;
     }
 }
 
 /* Searchbar Css */
-.searchBar{
+.searchBar {
+    display: flex;
+    justify-content: space-between;
     padding: 10px 1px 3px 1px;
     width: 50%;
-    border-bottom: 1px solid #4eb300;
+    border-bottom: 1px solid #0bafec;
 }
 
-/* Tooltip Design */
-#employeeSubDrop::after{
-    content: '\f0d9';
-    font-family: 'FontAwesome';
-    color: #f37022;
+/* -------------------------Dropdowns CSS-------------------- */
+.dropDownMenu {
+    background-color: #0bafec;
+    border-radius: 5px;
+    width: 260px;
+    height: 5rem;
+
+}
+
+@media (max-width:990px){
+    .dropDownMenu{
+        width: max-content;
+        font-size: xx-small;
+        height: min-content;
+    }
+}
+/* About Dropdown */
+.AboutDropDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    position: absolute;
+    font-size: medium !important;
+    right: 38.9rem;
+    padding: 0;
+    top: 0.9rem;
 }
 
 
+@media (max-width:1140px) {
+    .AboutDropDown {
+        top: 0.7rem;
+    }
+}
+
+@media (max-width:991px) {
+    .AboutDropDown {
+        position: static;
+        margin-left: 10px;
+    }
+}
+
+
+/* Employee Dropdwon */
+.employeeDropDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    position: absolute;
+    font-size: medium !important;
+    right: 20.9rem;
+    padding: 0;
+    top: 0.9rem;
+}
+
+
+@media (max-width:1140px) {
+    .employeeDropDown {
+        top: 0.7rem;
+    }
+}
+
+@media (max-width:991px) {
+    .employeeDropDown {
+        position: static;
+        margin-left: 10px;
+    }
+}
+
+/* Transmission Dropdwon */
+.transmissionDropDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    position: absolute;
+    font-size: medium !important;
+    right: 28rem;
+    top: 0.9rem;
+}
+
+@media (max-width:1140px) {
+    .transmissionDropDown {
+        top: 0.7rem;
+    }
+}
+
+@media (max-width:991px) {
+    .transmissionDropDown {
+        position: static;
+        margin-left: 10px;
+
+    }
+    .triangle{
+        display: none;
+    }
+}
+
+/* Media Dropdown */
+.mediaDropDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    position: absolute;
+    font-size: medium !important;
+    right: 15.7rem;
+    padding: 0;
+    top: 0.9rem;
+}
+
+
+@media (max-width:1140px) {
+    .mediaDropDown {
+        top: 0.7rem;
+    }
+}
+
+@media (max-width:991px) {
+    .mediaDropDown {
+        position: static;
+        margin-left: 10px;
+    }
+}
+
+
+/* Procurement DropDown */
+.procurementDropDown{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    position: absolute;
+    font-size: medium !important;
+    right: 7.3rem;
+    padding: 0;
+    top: 0.9rem;
+}
+
+
+@media (max-width:1140px) {
+    .procurementDropDown {
+        top: 0.7rem;
+    }
+}
+
+@media (max-width:991px) {
+    .procurementDropDown {
+        position: static;
+        margin-left: 10px;
+    }
+}
+
+/* SLDC dropdown */
+.SLDCDropDown{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    position: absolute;
+    font-size: medium !important;
+    right: 2.6rem;
+    padding: 0;
+    top: 0.9rem;
+}
+
+
+@media (max-width:1140px) {
+    .SLDCDropDown {
+        top: 0.7rem;
+    }
+}
+
+@media (max-width:991px) {
+    .SLDCDropDown {
+        position: static;
+        margin-left: 10px;
+    }
+}
+
+.triangle {
+    color: #db8204;
+    font-weight: 900 !important;
+    font-size: 1.3rem !important;
+    position: relative;
+    margin-left: auto;
+
+}
 
 
 
@@ -169,82 +396,3 @@
 
 
 
-@media (max-width: 1180px) {
-    .updiv {
-        overflow: hidden;
-    }
-
-    .dndiv {
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-    }
-
-    .navlogo {
-        display: flex;
-        justify-content: space-between;
-        height: 100px;
-    }
-
-    .utility {
-        width: 100%;
-    }
-
-    .imgdim {
-        height: 80px;
-    }
-
-    .utility .nav {
-        width: 100%;
-        gap: 0;
-        overflow: hidden;
-        height: 25px;
-        font-size: x-small;
-    }
-
-    .dndiv h4 {
-        font-size: medium;
-    }
-
-    .link {
-        width: 100%;
-        display: block;
-        justify-content: center;
-    }
-
-}
-
-@media (max-width: 768px) {
-    .design {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .utility {
-        border-radius: 10px;
-        overflow: hidden;
-        height: 30px;
-        width: 100%;
-    }
-
-    .utility .nav {
-        gap: 0px;
-    }
-
-    .link {
-        width: 100%;
-        display: block;
-        justify-content: center;
-    }
-
-    .navlogo {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .imgdim {
-        height: 80px;
-    }
-
-}

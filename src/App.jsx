@@ -7,6 +7,9 @@ import NavigationBar from '../components/NavigationBar';
 import Slider from '../components/Slider';
 import Test from '../components/test';
 import About from '../components/about';
+import Map from '../components/DisplayMap'
+import Footer from '../components/Footer';
+import StickyMenu from '../components/StickyMenu';
 function App() {
   useEffect(() => {
     AOS.init();
@@ -15,15 +18,28 @@ function App() {
   return (
     <>
       <div className="wraper">
-         <div data-aos="zoom-out-down" className="navigationBar">
+        <div className="navigationBar">
           <NavigationBar />
         </div>
-        {/* <div className="slider">
+        <div className="slider">
           <Slider />
-        </div> */}
-         <div>
-          <Test/>
-         </div>
+        </div>
+        
+        <div className='about'>
+          <About />
+        </div>
+
+        <div className='stickyMenu'>
+          <StickyMenu/>
+        </div>
+        <div className='test'>
+          <Test />
+        </div>
+
+        <div className="mapSection">
+          <Map/>
+        </div>
+        
       </div>
 
     </>
