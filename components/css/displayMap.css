@@ -1,4 +1,3 @@
-
 .mapBox {
   display: flex;
   /* background-color: rgb(159, 235, 234); */
@@ -26,7 +25,8 @@
   }
   
   .district-text {
-    fill: black;
+    fill: white;
+    font-weight: bold;
     font-size: 10px;
     text-anchor: middle;
     /* dominant-baseline: middle; */
@@ -37,42 +37,83 @@
   }
   
   .hover-background {
-    fill: black;
+    fill: white;
   }
   
   .hover-text1 {
-    fill: yellow;
+    fill: #2f2963;
+    font-weight: bold;
     font-size: 14px;
     text-anchor: middle;
     /* dominant-baseline: middle; */
     pointer-events: none; /* Prevent text from capturing mouse events */
   }
   
-  .muzZone{
-    fill: #E8b4b8;
-    stroke: black;
-    stroke-width: 1;
+  
+  .muzZone {
+    fill: #B99095;
+    stroke: white;
+    stroke-width: 1.2;
+    transition: stroke 0.3s ease, stroke-width 0.3s ease; /* Smooth transition for stroke changes */
   }
+  .muzZone:hover {
+    stroke: white; /* Change stroke color on hover */
+    stroke-width: 1.2; /* Change stroke width on hover */
+    animation: pulse 2s infinite alternate; /* Apply the pulse animation */
+  }
+  
   .patnaZone{
-    fill: #e7ad7d;
-    stroke: black;
-    stroke-width: 1;
+    fill: #C99460;
+    stroke: white;
+    stroke-width: 1.2;
+    transition: stroke 0.3s ease, stroke-width 0.3s ease; /* Smooth transition for stroke changes */
+  }
+  .patnaZone:hover {
+    stroke: white; /* Change stroke color on hover */
+    stroke-width: 1.2; /* Change stroke width on hover */
+    animation: pulse 2s infinite alternate; /* Apply the pulse animation */
   }
   .koshiZone
   {
-    fill: #b0d2da;
-    stroke: black;
-    stroke-width: 1;
+    fill:#8CBBBD ;
+    stroke: white;
+    stroke-width: 1.2;
+    transition: stroke 0.3s ease, stroke-width 0.3s ease; /* Smooth transition for stroke changes */
+  }
+  .koshiZone:hover {
+    stroke: white; /* Change stroke color on hover */
+    stroke-width: 1.2; /* Change stroke width on hover */
+    animation: pulse 2s infinite alternate; /* Apply the pulse animation */
   }
   .bhagalpurZone{
-    fill: #f8ea8c;
-    stroke: black;
-    stroke-width: 1;
+    fill:#D48C70 ;
+    stroke: white;
+    stroke-width: 1.2;
+    transition: stroke 0.3s ease, stroke-width 0.3s ease; /* Smooth transition for stroke changes */
+  }
+  .bhagalpurZone:hover {
+    stroke: white; /* Change stroke color on hover */
+    stroke-width: 1.2; /* Change stroke width on hover */
+    animation: pulse 2s infinite alternate; /* Apply the pulse animation */
   }
   .gayaZone{
-    fill:#a3ebb1; 
-    stroke: black;
-    stroke-width: 1;
+    fill:#5885AF; 
+    stroke: white;
+    stroke-width: 1.2;
+    transition: stroke 0.3s ease, stroke-width 0.3s ease; /* Smooth transition for stroke changes */
+  }
+  .gayaZone:hover {
+    stroke: white; /* Change stroke color on hover */
+    stroke-width: 1.2; /* Change stroke width on hover */
+    animation: pulse 2s infinite alternate; /* Apply the pulse animation */
+  }
+  @keyframes pulse {
+    0% {
+      stroke-width: 2; /* Starting width */
+    }
+    100% {
+      stroke-width: 2; /* Hover width */
+    }
   }
 
 
