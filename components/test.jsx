@@ -8,7 +8,7 @@ function test() {
     <div className='test'>
       <div style={{ display: 'flex', position: 'relative' }}>
         {/* <img src={whatsnew} alt="" style={{objectFit:'contain',padding:'3px',paddingTop:'5px',marginTop:'5px'}} /> */}
-        <div style={{ color: "white", backgroundColor: "#0bafec", zIndex: '1', padding: '4px', }}><h4 style={{ marginLeft: '5px' }}>WHAT'S NEW</h4></div>
+        <div style={{ color: "white", backgroundColor: "#0bafec", padding: '4px', }}><h5 style={{ marginLeft: '3.1rem' }}>WHAT'S NEW</h5></div>
         <div className="leftCrossEffect"></div>
       </div>
       <div className="scrolling-text-container">
@@ -20,13 +20,15 @@ function test() {
           <li>News 5: Notice Board. Some placeholder text. And some more text.<img src={NewImage} alt="" /></li>
           <li>News 6: Notice Board. Some placeholder text. And some more text.<img src={NewImage} alt="" /></li>
           <li>News 7: Notice Board. Some placeholder text. And some more text.<img src={NewImage} alt="" /></li>
-        </div>
 
+          
+        </div>
+        
       </div>
-      <div style={{position:'relative',display: 'flex'}}>
-      <div style={{ color: "white", backgroundColor: "#2f2963", zIndex: '2', padding: '4px', borderTopLeftRadius:'15px' }}><h4 style={{ marginLeft: '5px' }}>More Links</h4></div>
-        <div className="rightCrossEffect"></div>
-      </div>
+      {/* <div style={{ position: 'relative', display: 'flex' }}>
+        <div style={{ color: "white", backgroundColor: "#2f2963", zIndex: '2', padding: '4px', }}><h4 style={{ marginLeft: '5px' }}>More Links</h4></div>
+         <div className="rightCrossEffect"></div> 
+      </div> */}
     </div>
   )
 }
