@@ -14,7 +14,7 @@
   /* background: #864545; Change as needed */
   color: white;
   padding: 10px 0; /* Adjust padding as needed */
-  border-top-left-radius: 25px;
+  border-top-left-radius: 15px;
 }
 
 .scrolling-text {
@@ -53,12 +53,12 @@
   width: 30%;
   height: 100%;
   position: absolute;
-  left: 9.5rem;
+  left: 92%;
   top: 0;
   background-color: #2f2963;
   transform-origin: top left;
   transform: skewX(-23deg);
-  border-top-left-radius: 25px;
+  border-top-left-radius: 15px;
   /* border-top-right-radius: 25px; */
 }
 

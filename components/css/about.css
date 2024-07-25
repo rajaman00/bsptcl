@@ -9,7 +9,7 @@
   color: rgb(7, 7, 8);
   position: relative;
   z-index: 1;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
 .aboutImage {
@@ -20,9 +20,9 @@
 }
 
 .Card {
-  width: 15rem;
+  width: 13rem;
   height: 11.5rem;
-  margin: 1rem;
+  margin: 0.5rem;
   line-height: 0.5rem;
   border: 1px solid gray;
   box-shadow: rgba(115, 64, 64, 0.3) 0px 19px 38px, rgba(82, 53, 53, 0.22) 0px 15px 12px;

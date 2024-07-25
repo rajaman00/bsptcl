@@ -100,23 +100,7 @@ function NavigationBar() {
                                 ></input>
                                 <span onClick={voiceSearch}><FaMicrophone /></span>
                             </div>
-                            {/* <div className="companyLink" style={{ margin: "2px", padding: "5px" }}>
-                                <div>
-                                    <img src={mediclaim} alt="Mediclaim" style={{ height: '20px', width: '20px' }} />
-                                </div>
-
-                                <div>
-                                    <img src={Email} alt="Mediclaim" style={{ height: '20px', width: '20px' }} />
-                                </div>
-
-                                <div>
-                                    <img src={callDirectory} alt="Mediclaim" style={{ height: '20px', width: '20px' }} />
-                                </div>
-
-                                <div>
-                                    <img src={Twitter} alt="Mediclaim" style={{ height: '20px', width: '20px' }} />
-                                </div>
-                            </div> */}
+                           
                         </div>
 
                         {/* ----------------------Main Link---------------------------------- */}

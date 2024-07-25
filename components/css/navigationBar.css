@@ -31,6 +31,9 @@
     position: relative;
     border-bottom: 4px solid #2f2963;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
@@ -70,6 +73,7 @@
 .mainLinkAndSearchBar {
     width: 60%;
     position: relative;
+    
 }
 
 @media(max-width:991px) {
@@ -82,16 +86,6 @@
 .searchBarAndCompanyLink{
     display: flex;
 }
-.companyLink{
-    display: flex;
-    /* justify-content: space-around; */
-    justify-content: flex-end;
-    padding: 0.5rem;
-    margin-left: 3rem;
-    width: 50%;
-    
-}
-
 
 
 
@@ -139,6 +133,8 @@
         padding: 2px;
     }
 }
+
+
 
 @media (max-width:991px) {
     .logoAndLink {

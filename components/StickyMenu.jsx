@@ -11,7 +11,7 @@ import twitter from '../public/images/NotificationImages/twitter.png'
 function StickyMenu() {
     let imgPhone = <img src={phone} alt="" style={{width:'2.5rem',height:'2.5rem'}} />
     let setImgPhone = <div style={{display:'flex',padding:'3px', justifyContent:'space-between',width:'10rem'}}>
-        <div>Phone Directory</div>
+        <div>Directory</div>
         <div>
         <img src={phone} alt="" style={{width:'2.5rem',height:'2rem',objectFit:'contain'}} />
         </div> 
