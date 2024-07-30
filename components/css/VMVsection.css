@@ -1,14 +1,21 @@
 .VMV {
+  width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: px; */
-    background-color: #ccc;
-    
+    margin: auto;
+    padding: 1rem;
   }
+   .mission, .value {
+    padding-left: 1rem;
+    margin-left: 2rem;
+    border-left: 2px double #0bafec;
+  }
+
   
-  .vision, .mission, .value {
-    /* flex: 1; */
+  
+ /* .vision, .mission, .value {
+    flex: 1; 
     width: 20rem;
     height: 20rem;
     transform: skewX(-5deg);
@@ -24,13 +31,13 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white; /* If the text needs to be visible against the background image */
+    color: white; If the text needs to be visible against the background image 
     height: 20rem;
     transform: skewX(-15deg);
     transform-origin: left;
   }
   .afterHover{
-    /* position: relative; */
+    position: relative;
     background-color: #0bafec;
     width: 20rem;
     height: 20rem;
@@ -46,7 +53,7 @@
     left: 4rem;
     height: 20rem;
     width: 15rem;
-  }
+  }*/
 
  
   

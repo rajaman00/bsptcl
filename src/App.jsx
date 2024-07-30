@@ -38,9 +38,7 @@ function App() {
           <Test />
         </div>
 
-        <div className="mapSection">
-          <Map/>
-        </div>
+        
 
         <div className="VMVsection">
            <VMV/>
@@ -48,6 +46,10 @@ function App() {
 
         <div className="awardSection">
           <AwardsSection/>
+        </div>
+
+        <div className="mapSection">
+          <Map/>
         </div>
         
       </div>
