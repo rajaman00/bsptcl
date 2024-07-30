@@ -6,9 +6,9 @@ import whatsnew from '../public/images/NotificationImages/text.gif'
 function test() {
   return (
     <div className='test'>
-      <div style={{ display: 'flex', position: 'relative' }}>
+      <div style={{ display: 'flex', position: 'relative', width: '17rem' }}>
         {/* <img src={whatsnew} alt="" style={{objectFit:'contain',padding:'3px',paddingTop:'5px',marginTop:'5px'}} /> */}
-        <div style={{ color: "white", backgroundColor: "#0bafec", padding: '4px', }}><h5 style={{ marginLeft: '3.1rem' }}>WHAT'S NEW</h5></div>
+        <div style={{ color: "white", backgroundColor: "#0bafec", padding: '4px',display:'flex', alignItems:'center', width: '19rem' }}><h5 style={{ marginLeft: '5rem' }}>What's New?</h5></div>
         <div className="leftCrossEffect"></div>
       </div>
       <div className="scrolling-text-container">

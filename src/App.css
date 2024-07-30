@@ -27,11 +27,14 @@
   z-index: 9;
 }
 .about{
-  margin-top: 5rem;
-  margin-left: 2.5rem;
+  margin-top: 4rem;
+  margin-left: 5rem;
+  margin-bottom: 4rem;
   
 }
 .mapSection{
-  margin-top: 2rem;
-  margin-left: 3rem;
+  margin-top: 4rem;
+  margin-left: 5rem;
+  margin-bottom: 4rem;
+  margin-right: 5rem;
 }

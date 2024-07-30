@@ -101,7 +101,7 @@
     bottom: 0;
     right: 0;
     background-color: #2f2963;
-    z-index: 2;
+    z-index: 3;
     padding-bottom: 0 !important;
     border-top-left-radius: 15px;
 }
@@ -123,7 +123,6 @@
     background-color: #2f2963;
     transform-origin: top left;
     transform: skewX(-33deg);
-
     border-top-left-radius: 15px;
 }
 

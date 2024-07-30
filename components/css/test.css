@@ -61,16 +61,3 @@
   border-top-left-radius: 15px;
   /* border-top-right-radius: 25px; */
 }
-
-.rightCrossEffect{
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 4rem;
-  background-color: #2f2963;
-  transform-origin: top left;
-  transform: skewX(-33deg);
-  /* border-top-left-radius: 15px; */
-
-}
