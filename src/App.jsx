@@ -51,6 +51,10 @@ function App() {
         <div className="mapSection">
           <Map/>
         </div>
+
+        <div className="footerSection">
+          <Footer/>
+        </div>
         
       </div>
 

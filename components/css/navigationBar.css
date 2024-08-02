@@ -76,6 +76,11 @@
     
 }
 
+@media(max-width:1200px) {
+    .mainLinkAndSearchBar{
+        width: 37rem;
+    }
+}
 @media(max-width:991px) {
     .mainLinkAndSearchBar {
         width: 100%;
@@ -129,7 +134,7 @@
 @media (max-width:1200px) {
     .mainLink {
         font-size: 0.7rem;
-        padding: 2px;
+        padding: 0.3rem;
     }
 }
 
@@ -191,7 +196,7 @@
     justify-items: flex-end;
     position: absolute;
     font-size: medium !important;
-    right: 38.9rem;
+    right: 38.8rem;
     padding: 0;
     top: 0.9rem;
 }
@@ -358,7 +363,24 @@
 
 }
 
-
+@media(max-width:1200px) {
+    .AboutDropDown{
+          right: 29.4rem;
+          top: 0.4rem;
+    }
+    .transmissionDropDown{
+        right: 21.5rem;
+          top: 0.4rem;
+    }
+    .employeeDropDown{
+        right: 16.1rem;
+        top: 0.4rem;
+    }
+    .mediaDropDown{
+        right: 12.1rem;
+          top: 0.4rem;
+    }
+}
 
 
 

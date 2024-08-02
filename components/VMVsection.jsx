@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import '../components/css/VMVsection.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import visionImage from '../public/images/VMVsection/minion.jpg';
 // import missionImage from '../public/images/VMVsection/mission.jpg'
 // import valueImage from '../public/images/VMVsection/value.jpg'
@@ -7,12 +9,17 @@ import '../components/css/VMVsection.css';
 
 
 function VMVsection(){
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   return (
     <>
     <div className="VMV">
       {/* Vision Div */}
-      <div className="vision">
+      <div className="vision" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
         <div className="vmvImage">
           <div className="vmvText">
                <h4 className='text-center'>Vision</h4>
@@ -23,7 +30,8 @@ function VMVsection(){
 
 
       {/* Mission Div */}
-      <div className="mission">
+      <div className="mission" data-aos="fade-down" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
         <div className="vmvImage">
           <div className="vmvText">
           <h4 className='text-center'>Mission</h4>
@@ -33,7 +41,8 @@ function VMVsection(){
       </div>
 
       {/* Value Div */}
-      <div className="value">
+      <div className="value" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
         <div className="vmvImage">
           <div className="vmvText">
           <h4 className='text-center'>Value</h4>
