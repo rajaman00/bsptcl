@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 
 
 
-function VMVsection(){
+function VMVsection() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -16,41 +16,56 @@ function VMVsection(){
 
   return (
     <>
-    <div className="VMV">
-      {/* Vision Div */}
-      <div className="vision" data-aos="fade-right" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-        <div className="vmvImage">
-          <div className="vmvText">
-               <h4 className='text-center'>Vision</h4>
-               <p style={{textAlign:'justify'}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam est a ab labore iure, soluta quos excepturi perspiciatis ut omnis, assumenda quaerat qui accusamus, quis ex saepe odio accusantium?</p>
+      <div className="VMV">
+        {/* Vision Div */}
+        <div className="vision" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+          <div className="vmvImage">
+            <div className="vmvText">
+              <h4 className='text-center'>Vision</h4>
+              <p style={{ textAlign: 'justify' }}>To deliver excellence in service, innovation, efficiency, and sustainability for driving the growth and development of communities and industries, while ensuring environmental stewardship and maximizing value for the people of the state.</p>
+            </div>
+          </div>
+        </div>
+
+
+        {/* Mission Div */}
+        <div className="mission" data-aos="fade-down" data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+          <div className="vmvImage">
+            <div className="vmvText">
+              <h4 className='text-center'>Mission</h4>
+              <p style={{ textAlign: 'justify' }}>Striving to achieve the vision of the company by:</p>
+              <ul>
+                <li>Committment to operational excellence, innovation and sustainability, ensuring uninterrupted and quality delivery of power.</li>
+                <li>Adoption of world-class technology and practices to ensure the efficient and reliable delivery of electricity from power generation sources to distribution networks and directly to open-access consumers</li>
+                <li>Adopting cost-effective power transmission services that support economic growth and improve the quality of life for the people of the state.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Value Div */}
+        <div className="value" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+          <div className="vmvImage">
+            <div className="vmvText">
+              <h4 className='text-center'>Value</h4>
+              {/* <p style={{ textAlign: 'justify' }}>Transparency, Accountability and Integrity.</p>
+              <p style={{ textAlign: 'justify' }}>Quality service and social responsibility.</p>
+              <p style={{ textAlign: 'justify' }}>Responsive to change and new developments.</p> */}
+              <ul>
+                <li>Transparency, Accountability and Integrity.</li>
+                <li>Quality service and social responsibility.</li>
+                <li>Responsive to change and new developments.</li>
+               
+              </ul>
+                
+              
+            </div>
           </div>
         </div>
       </div>
-
-
-      {/* Mission Div */}
-      <div className="mission" data-aos="fade-down" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-        <div className="vmvImage">
-          <div className="vmvText">
-          <h4 className='text-center'>Mission</h4>
-          <p style={{textAlign:'justify'}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam est a ab labore iure, soluta quos excepturi perspiciatis ut omnis, assumenda quaerat qui accusamus, quis ex saepe odio accusantium?</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Value Div */}
-      <div className="value" data-aos="fade-left" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
-        <div className="vmvImage">
-          <div className="vmvText">
-          <h4 className='text-center'>Value</h4>
-          <p style={{textAlign:'justify'}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam est a ab labore iure, soluta quos excepturi perspiciatis ut omnis, assumenda quaerat qui accusamus, quis ex saepe odio accusantium?</p>
-          </div>
-        </div>
-      </div>
-    </div>
     </>
   );
 }

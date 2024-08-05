@@ -20,7 +20,7 @@ body {
     width: 33%;
 }
 
-.footer1 h3 {
+.footer1 h4 {
     color: #f7df1e;
 }
 
@@ -35,4 +35,8 @@ body {
 
 .footer1 .contact-info p {
     margin: 0;
+}
+
+.others{
+    padding-left: 7rem;
 }

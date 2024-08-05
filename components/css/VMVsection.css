@@ -1,18 +1,33 @@
 .VMV {
-  width: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 1rem;
-  }
-   .mission, .value {
-    padding-left: 1rem;
-    margin-left: 2rem;
-    border-left: 2px double #0bafec;
-  }
-  
- /* .vision, .mission, .value {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+.value,.mission {
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+  border-left: 2px double #0bafec;
+}
+.vision{
+  width: 30%;
+}
+.mission{
+  width: 43%;
+}
+.value{
+  width: 30%;
+}
+ul{
+  padding-left: 1.2rem !important;
+}
+
+/* .mission{
+    width: 220rem;
+  } */
+
+/* .vision, .mission, .value {
     flex: 1; 
     width: 20rem;
     height: 20rem;
@@ -52,6 +67,3 @@
     height: 20rem;
     width: 15rem;
   }*/
-
- 
-  
