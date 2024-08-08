@@ -3,7 +3,7 @@ import '../components/css/test.css'
 import NewImage from '../public/images/NotificationImages/new.gif'
 import whatsnew from '../public/images/NotificationImages/text.gif'
 
-function test() {
+function Test() {
   return (
     <div className='test'>
       <div style={{ display: 'flex', position: 'relative', width: '38%' }}>
@@ -32,4 +32,4 @@ function test() {
   )
 }
 
-export default test
+export default Test;
