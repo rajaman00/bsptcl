@@ -31,7 +31,8 @@ const ActiveTenders = () => {
         justifyContent: 'center',
         color: 'white',
         padding: '20px',
-        textAlign: 'left'
+        textAlign: 'left',
+        backgroundColor:''
       }}
     >
       <Typography variant="h2" sx={{ fontWeight: 'bold' }}>

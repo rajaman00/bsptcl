@@ -7,16 +7,18 @@ import OfficeOrder from './Pages/OfficeOrder.jsx';
 import AnnualReport from './Pages/AnnualReport.jsx';
 import ActiveTenders from './Pages/ActiveTenders.jsx';
 import TariffDetails from './Pages/TariffDetails.jsx';
+import ArchiveTenders from './Pages/ArchiveTenders.jsx';
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     
-    {/* <OfficeOrder/> */}
+    {/* <OfficeOrder/>  */}
     {/* <AnnualReport/> */}
-    <ActiveTenders/>
+    {/* <ActiveTenders/> */}
     {/* <TariffDetails/> */}
     {/* <App/> */}
+    <ArchiveTenders/>
   </React.StrictMode>,
 )
